@@ -3,13 +3,13 @@ package com.example.taskapp.data.subject
 import androidx.lifecycle.LiveData
 
 class SubjectRepository(private val subjectDao: SubjectDao) {
-    val allSubjects: LiveData<List<Subject>> = subjectDao.getAllSubjects()
+    val allSubjects: LiveData<List<Subject>> = subjectDao.findAllSubjects()
 
-    suspend fun insert(subject: Subject) {
-        subjectDao.insertSubject(subject)
+    fun insert(subject: Subject) {
+        subjectDao.addSubject(subject)
     }
 
-    suspend fun delete(subject: Subject){
-        subjectDao.deleteSubject(subject)
+    fun delete(subject: Subject){
+        subjectDao.removeSubject(subject)
     }
 }

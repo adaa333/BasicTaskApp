@@ -41,7 +41,7 @@ class SubjectAdapter() : RecyclerView.Adapter<SubjectAdapter.SubjectViewHolder>(
         private val subjectNameTextView: TextView = itemView.findViewById(R.id.textViewSubjectName)
 
         fun bind(subject: Subject) {
-            subjectNameTextView.text = subject.name
+            subjectNameTextView.text = subject.subjectName
             // tema
         }
     }

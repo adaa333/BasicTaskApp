@@ -14,12 +14,17 @@ interface TaskDao {
     fun getTasksByModule(moduleName: String): LiveData<List<Task>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertTask(task: Task)
+    fun insertTask(task: Task)
 
     @Update
-    suspend fun updateTask(task: Task)
+    fun updateTask(task: Task)
 
     @Delete
-    suspend fun deleteTask(task: Task)
-    abstract fun getAllTasks(): LiveData<List<Task>>
+    fun deleteTask(task: Task)
+
+    @Query("SELECT * FROM tasks WHERE task_id = :taskId")
+    fun findTaskById(taskId: Long): Task
+
+    @Query ("SELECT * FROM tasks")
+    fun getAllTasks(): LiveData<List<Task>>
 }

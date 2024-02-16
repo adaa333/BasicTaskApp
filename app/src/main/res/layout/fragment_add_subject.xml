@@ -35,8 +35,8 @@
         <RadioButton
             android:id="@+id/blueTheme"
             android:background="@color/dark_blue"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="10dp"
             android:layout_marginTop="10dp"
@@ -45,72 +45,69 @@
         <RadioButton
             android:id="@+id/orangeTheme"
             android:background="@color/dark_orange"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            style="@style/RadioButtonNoCircle"/>
+            android:layout_marginBottom="10dp"/>
+
         <RadioButton
             android:id="@+id/purpleTheme"
             android:background="@color/dark_purple"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            style="@style/RadioButtonNoCircle"/>
+            android:layout_marginBottom="10dp"/>
+
         <RadioButton
             android:id="@+id/greenTheme"
             android:background="@color/dark_green"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            style="@style/RadioButtonNoCircle" />
+            android:layout_marginBottom="10dp"/>
 
         <RadioButton
             android:id="@+id/pinkTheme"
             android:background="@color/dark_pink"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            style="@style/RadioButtonNoCircle"/>
+            android:layout_marginBottom="10dp"/>
 
         <RadioButton
             android:id="@+id/yellowTheme"
             android:background="@color/dark_yellow"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            style="@style/RadioButtonNoCircle"/>
+            android:layout_marginBottom="10dp"/>
 
         <RadioButton
             android:id="@+id/redTheme"
             android:background="@color/dark_red"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="8dp"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            style="@style/RadioButtonNoCircle"/>
+            android:layout_marginBottom="10dp"/>
     </RadioGroup>
+
 
         <Button
             android:id="@+id/saveSubject"
             android:layout_width="100dp"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:layout_centerVertical="true"
             android:layout_marginTop="80dp"
             android:layout_marginStart="16dp"
@@ -125,7 +122,7 @@
         <Button
             android:id="@+id/deleteSubject"
             android:layout_width="100dp"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:layout_toEndOf="@id/saveSubject"
             android:layout_centerVertical="true"
             android:layout_marginTop="80dp"
@@ -135,7 +132,6 @@
             android:textSize="16sp"
             android:textAlignment="center"
             app:layout_constraintTop_toBottomOf="@+id/asignarTema"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/guardarAsignatura"/>
+            app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,11 +8,13 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+//import com.example.taskapp.databinding.SubjectListFragmentBinding
 import com.example.taskapp.R
 
 class SubjectListFragment : Fragment() {
 
     private lateinit var subjectViewModel: SubjectViewModel // Asegúrate de tener tu ViewModel configurado
+   // lateinit var binding: SubjectListFragmentBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -22,11 +24,12 @@ class SubjectListFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+        /*super.onViewCreated(view, savedInstanceState)
 
-        val adapter = SubjectAdapter() // Implementa tu adaptador según tus necesidades
-        recyclerViewSubjects.adapter = adapter
-        recyclerViewSubjects.layoutManager = LinearLayoutManager(context)
+        val recycler = binding.recyclerViewSubjects
+        val adapter = SubjectAdapter()
+        recycler.adapter=adapter
+        recycler.layoutManager= LinearLayoutManager(requireContext())
 
         subjectViewModel = ViewModelProvider(this).get(SubjectViewModel::class.java) // Asegúrate de que tu ViewModel esté configurado
 
@@ -34,7 +37,7 @@ class SubjectListFragment : Fragment() {
             subjects?.let {
                 adapter.setSubjects(it)
             }
-        })
+        })*/
 
         // Configura la lógica de clic en los elementos de la lista si es necesario
         // recyclerViewSubjects.setOnItemClickListener { subject ->
