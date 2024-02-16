@@ -3,4 +3,6 @@
     <string name="title_subject_list">Subjects</string>
     <string name="title_save_subject">Add Subject</string>
     <string name="title_theme">Theme</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

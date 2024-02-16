@@ -12,7 +12,7 @@ import com.example.taskapp.data.subject.SubjectRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class  SubjectViewModel(application: Application) : AndroidViewModel(application){
+class SubjectViewModel(application: Application) : AndroidViewModel(application){
 
     val readAllSubjects : LiveData<List<Subject>>
     private val repository: SubjectRepository

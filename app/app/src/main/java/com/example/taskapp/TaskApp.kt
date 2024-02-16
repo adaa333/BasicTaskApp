@@ -17,7 +17,7 @@ class TaskApp : Application() {
         // Inicializar la base de datos de Room
         database = Room.databaseBuilder(
             applicationContext,
-            TaskDataBase::class.java, "database-name"
+            TaskDataBase::class.java, "task_database"
         ).build()
 
         // Otros códigos de inicialización aquí
